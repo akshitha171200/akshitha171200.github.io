@@ -1,0 +1,201 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    /* Light gray background for contrast */
+}
+
+/* Home Section Styles */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#home h1 {
+    font-size: 2em;
+    margin: 0;
+    width: 100%;
+}
+
+/* ... Continue with the rest of your CSS ... */
+
+/* Page Container */
+/* .container {
+    width: 80%;
+margin: 0 auto;
+}
+
+*/
+
+
+.about-section {
+    text-align: left;
+    /* Center the title and headings */
+    padding: 60px 0;
+    /* Add padding for spacing */
+}
+
+.section-title {
+    font-size: 2.5em;
+    /* Adjust the font size for emphasis */
+    margin-bottom: 20px;
+    text-align: center;
+    /* Space below the title */
+}
+
+.about-section h2 {
+    margin-top: 20px;
+    /* Space above the heading for visual separation */
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.education-section {
+    margin: 40px 0;
+}
+
+.timeline {
+    position: relative;
+    margin: auto;
+    padding: 20px 0;
+    max-width: 800px;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+}
+
+.timeline-content {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 80px;
+}
+
+.timeline-content h3{
+    margin :0px;
+    padding:0px;
+}
+
+.timeline-content p{
+    margin :0px;
+    padding:0px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e0e0e0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        /* Stack columns on smaller screens */
+    }
+
+    .timeline-content {
+        margin-left: 0;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    /* Maximum width of the container */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 20px;
+    /* Padding around the content */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+    /* Center text */
+}
+
+.fh5co-heading h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.skill-icon {
+    transition: transform 0.3s;
+    padding: 20px;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
+
+.skill-icon img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-icon p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .skill-icon {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill-icon {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
